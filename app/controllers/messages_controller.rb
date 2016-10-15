@@ -30,6 +30,12 @@ class MessagesController < ApplicationController
 	end
 
 	def update
+		if @message.update(message_params)
+			redirect_to message_path
+		else
+			render 'edit'
+			
+		end
 		
 	end
 
