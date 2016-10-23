@@ -48,3 +48,55 @@ h1, h2, h3, h4, h5, h6{
 	color: #383838;
 	background-color: #fff;
 }
+
+/*Message style*/
+.message{
+	box-sizing: border-box;
+	background-color: #383838;
+	margin-bottom:25px;
+	margin-right:10px;
+	margin-left:10px;
+	padding: 1.4em 1.4em;
+	height:150px;
+	border-bottom: 4px solid #0a8fd5;
+	.message-title{
+	font-size: 1.5em;
+	font-family:'Muli', sans-serif;
+	font-weight:300;
+	margin-top: 0;
+	color: white;
+	margin-bottom:25px;
+	}
+
+	.btn-custom{
+	margin-top: 20px;
+	}
+	}
+.message:nth-child(4n){
+	clear: left;
+}
+
+/*message show-page styles*/
+.message-show{
+	box-sizing: border-box;
+	background-color: #383838;
+	padding:2 .0em 1.5em;
+	border-bottom: 4px solid #0a8fd5;
+	color: #fff;
+	font-family: 'Muli', sans-serif;
+	font-weight: 300;
+h2 {
+	margin-top:0;
+}
+
+.message-desc{
+	font-size:1.1em;
+	line-height:1.75;
+	margin-bottom: 50px;
+}
+
+.message-posted-by{
+	color:#eee;
+	font-size:0.9em;
+}
+}
