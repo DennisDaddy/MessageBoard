@@ -43,3 +43,8 @@ h1, h2, h3, h4, h5, h6{
 	}
 }
 
+.btn:hover{
+	transition:0.5s;
+	color: #383838;
+	background-color: #fff;
+}
