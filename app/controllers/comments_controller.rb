@@ -39,6 +39,7 @@ class CommentsController < ApplicationController
 
 	def comment_params
 		params.require(:comment).permit(:content)
+		before_action :authenticate_user!
 		
 	end
 
