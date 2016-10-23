@@ -1,8 +1,9 @@
-<p><%= comment.content %> </p> 
- <p>Posted by <%= @message.user.email %>
+<div class="comment">
+<p class="comment-content"><%= comment.content %> </p> 
+ <p class="comment-posted-by">Posted by <%= @message.user.email %>
  	<%= time_ago_in_words(@message.created_at)  %> ago
  </p>
-
+<div class="links">
  <% if user_signed_in? %>
    <% if comment.user_id == current_user.id %>
 	<%= link_to "Edit", edit_message_comment_path(comment.message, comment) %>
@@ -10,3 +11,5 @@
 
 	<% end %>
 <% end %>
+</div>
+</div>
